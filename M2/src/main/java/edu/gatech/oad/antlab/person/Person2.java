@@ -30,8 +30,23 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+	  int r, k;
+	  String[] rtr= new String[input.length()];
+	  String temp, toReturn = "";
+	  for (int i = 0; i < input.length() -1; i ++) {
+	  	rtr[i] = "" + input.charAt(i);
+	  }
+	  for (int i = 0; i < 10; i++) {
+	  	r = (int) Math.random() * input.length();
+	  	k = (int) Math.random() * input.length();
+	  	temp = rtr[r];
+	  	rtr[r] = rtr[k];
+	  	rtr[k] = temp;
+	  }
+	  for (int i = 0; i < rtr.length - 1; i++) {
+	  	toReturn += rtr[i];
+	  }
+	  return toReturn;
 	}
 	/**
 	 * Return a string rep of this object
