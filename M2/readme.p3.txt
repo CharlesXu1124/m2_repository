@@ -1,2 +1,2 @@
-Manu Poruthoor (Person 3)
+Manu Poruthoor
 manu.poruthoor@gatech.edu
